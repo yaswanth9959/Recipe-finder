@@ -291,4 +291,29 @@ section{
 
 
 
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.search-form input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+}
+
+.search-form button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #213547;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
 
