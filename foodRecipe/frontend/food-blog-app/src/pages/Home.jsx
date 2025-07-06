@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import foodRecipe from '../assets/foodRecipe.png'
+import foodRecipe from '../assets/pic1.png'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import RecipeItems from '../components/RecipeItems'
@@ -24,8 +24,8 @@ export default function Home() {
         <>
             <section className='home'>
                 <div className='left'>
-                    <h1>Food Recipe</h1>
-                    <h5>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</h5>
+                    <h1>Delicious Recipes</h1>
+                    <h5>Dive into a world of culinary inspiration with our extensive collection of recipes designed for every taste and skill level. Whether you're a seasoned chef or just starting your cooking journey, you'll find easy-to-follow instructions and delightful dishes that promise to transform your kitchen into a hub of delicious creation. Get ready to explore, experiment, and share your passion for food!</h5>
                     <button onClick={addRecipe}>Share your recipe</button>
                 </div>
                 <div className='right'>
@@ -33,7 +33,7 @@ export default function Home() {
                 </div>
             </section>
             <div className='bg'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d4f6e8" fillOpacity="1" d="M0,32L40,32C80,32,160,32,240,58.7C320,85,400,139,480,149.3C560,160,640,128,720,101.3C800,75,880,53,960,80C1040,107,1120,181,1200,213.3C1280,245,1360,235,1400,229.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,160L30,170.7C60,181,120,203,180,208C240,213,300,203,360,170.7C420,139,480,85,540,85.3C600,85,660,139,720,186.7C780,235,840,277,900,256C960,235,1020,149,1080,133.3C1140,117,1200,171,1260,170.7C1320,171,1380,117,1410,90.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
             </div>
             {(isOpen) && <Modal onClose={() => setIsOpen(false)}><InputForm setIsOpen={() => setIsOpen(false)} /></Modal>}
             <div className='recipe'>

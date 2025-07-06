@@ -14,6 +14,10 @@ app.use(express.static("public"))
 app.use("/",require("./routes/user"))
 app.use("/recipe",require("./routes/recipe"))
 
+app.get("/home", (req, res) => {
+  res.send("<h2>✅ Server is running successfully!</h2>");
+});
+
 app.listen(PORT,(err)=>{
     console.log(`app is listening on port ${PORT}`)
 })
